@@ -1,0 +1,102 @@
+<!doctype html>
+<html>
+ <head>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8"> 
+    <title>学习专区</title>
+    <link rel="stylesheet" href="style.css">
+
+	<script></script>
+	<script src='http://running-bugs.github.io/HTMLUseful/useful.js'></script>
+
+    
+
+		<style type="text/css">
+		body{
+			background:#E8E8E8;
+			width:100%;
+			width:100%;
+		}
+		
+		ul{
+			
+		}
+		ul,li{
+			list-style:none;
+		}
+		#spandiv{
+			max-width:20%;
+			min-width:15%;
+			height:100%;
+		}
+		#iframediv{
+			position:absolute;
+			top:0px;
+			left:0px;
+			right:0px;
+			margin-left: 15%;
+
+			height:100%;
+		}
+		#iframe{
+			width:100%;
+			height:100%;
+			
+			
+		}
+
+		.lileft{
+			
+		}
+	</style>
+  </head>
+  
+  <body>
+  <div id='spandiv' style='float:left'>
+    <p>HTML学习</p>
+	<div class='lileft'>
+		<ul>
+		  <li><a href="http://www.w3school.com.cn">w3school</a></li>
+		  <li><a href="https://thimble.mozilla.org/">Thimble</a></li>
+		</ul>
+	</div>
+    <p>java 文档</p>
+    <ul>
+      <li><a href="http://tool.oschina.net/apidocs/apidoc?api=jdk_7u4">Java API</a></li>
+      <li><a href="http://tool.oschina.net/apidocs/apidoc?api=jdk-zh">Java 中文文档</a></li>
+    </ul>
+    <p>学习视频</p>
+    <ul>
+      <li><a href="http://study.163.com/">网易云课堂</a></li>
+      <li><a href="https://ke.qq.com/">腾讯课堂</a></li>
+      <li><a href="http://www.icourses.cn/home/">爱课程</a></li>
+    </ul>
+    <p>黑客/网络安全</p>
+    <ul>
+      <li><a href="http://www.icourses.cn/home/">红黑联盟</a></li>
+      <li><a href="https://www.secpulse.com/?navisec">安全脉搏</a></li>
+    </ul>
+    <p>各色导航/奇趣论坛</p>
+	<ul>
+     <li><a href="http://www.1nami.com/">1纳米学习导航</a></li>
+     <li><a href="https://navisec.it/">纳威安全导航</a></li>
+     <li><a href="http://www.chongbuluo.com/">虫部落</a></li>
+	</ul>
+  </div>
+
+  <div style='' id='iframediv'>
+  <iframe target='_self' frameborder='0' marginheight='0'
+			marginwidth='0' id='iframe' name='iframe'
+			src='adorn.html'>
+  
+  </iframe>
+  </div>
+
+<script>
+var a=this.getElement("tags.a");
+for(var i=0;i<a.length;i++){
+	a[i].target="iframe";
+}
+
+</script>
+</body>
+</html>
